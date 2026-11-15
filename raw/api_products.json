@@ -1,0 +1,439 @@
+{
+ "products": {
+  "status": 200,
+  "meta": {
+   "devMessage": null,
+   "errorKey": null,
+   "userMessage": {
+    "i18n": {
+     "key": null,
+     "interpolations": null
+    },
+    "plain": null
+   }
+  },
+  "data": {
+   "paginationMeta": {
+    "currentPage": 1,
+    "previousPage": null,
+    "nextPage": null,
+    "perPage": 20,
+    "totalPages": 1,
+    "totalCount": 2
+   },
+   "allProductsCount": 2,
+   "showDummyData": null,
+   "products": [
+    {
+     "id": 2148665,
+     "name": "五不评价手册(北京嘚瑟附属青虫文教出版社)(青教社)",
+     "description": "HB/T20230001.1.1",
+     "picture": [
+      {
+       "url": "https://user-assets.sxlcdn.com/images/1148093/FmH13P6Ab57H4yH8zOfCmESKa7nz.jpg?imageMogr2/strip/auto-orient/thumbnail/2000x3000%3E/quality/90!/interlace/1/format/jpeg",
+       "thumbnailUrl": "https://user-assets.sxlcdn.com/images/1148093/FmH13P6Ab57H4yH8zOfCmESKa7nz.jpg?imageMogr2/strip/auto-orient/thumbnail/500x1000%3E/quality/90!/interlace/1/format/jpeg",
+       "mediaType": "image"
+      }
+     ],
+     "detailEnabled": false,
+     "dimensions": null,
+     "status": "visible",
+     "productType": "physical",
+     "enableCustomSlug": false,
+     "customSlug": null,
+     "enabled": true,
+     "sortWeight": {
+      "all": 200,
+      "no": 200
+     },
+     "ctaBtn": null,
+     "shippingInfo": true,
+     "estimatedDelivery": "",
+     "timedShelfDate": null,
+     "posId": null,
+     "isWeightToAll": true,
+     "weightToAll": 0,
+     "startDate": null,
+     "endDate": null,
+     "categoryIds": [],
+     "categories": [],
+     "slugPath": "/store/products/da39a3ee5e6-afe3068c-2512-4a86-897b-f461e2cd96eb",
+     "realSales": 0,
+     "originalSales": 0,
+     "variations": [
+      {
+       "id": 2196648,
+       "name": "八课时",
+       "price": 250,
+       "quantity": -1,
+       "originalPrice": -1,
+       "picture": {
+        "url": "https://user-assets.sxlcdn.com/images/1148093/FmH13P6Ab57H4yH8zOfCmESKa7nz.jpg?imageMogr2/strip/auto-orient/thumbnail/2000x3000%3E/quality/90!/interlace/1/format/jpeg",
+        "thumbnailUrl": "https://user-assets.sxlcdn.com/images/1148093/FmH13P6Ab57H4yH8zOfCmESKa7nz.jpg?imageMogr2/strip/auto-orient/thumbnail/500x1000%3E/quality/90!/interlace/1/format/jpeg",
+        "mediaType": "image"
+       },
+       "weight": 0.0,
+       "sortNumber": 0,
+       "cost": 0
+      },
+      {
+       "id": 2196649,
+       "name": "十二课时",
+       "price": 300,
+       "quantity": -1,
+       "originalPrice": -1,
+       "picture": {
+        "url": "https://user-assets.sxlcdn.com/images/1148093/FmH13P6Ab57H4yH8zOfCmESKa7nz.jpg?imageMogr2/strip/auto-orient/thumbnail/2000x3000%3E/quality/90!/interlace/1/format/jpeg",
+        "thumbnailUrl": "https://user-assets.sxlcdn.com/images/1148093/FmH13P6Ab57H4yH8zOfCmESKa7nz.jpg?imageMogr2/strip/auto-orient/thumbnail/500x1000%3E/quality/90!/interlace/1/format/jpeg",
+        "mediaType": "image"
+       },
+       "weight": 0.0,
+       "sortNumber": 1,
+       "cost": 0
+      },
+      {
+       "id": 2196650,
+       "name": "十六课时",
+       "price": 350,
+       "quantity": -1,
+       "originalPrice": -1,
+       "picture": {
+        "url": "https://user-assets.sxlcdn.com/images/1148093/FmH13P6Ab57H4yH8zOfCmESKa7nz.jpg?imageMogr2/strip/auto-orient/thumbnail/2000x3000%3E/quality/90!/interlace/1/format/jpeg",
+        "thumbnailUrl": "https://user-assets.sxlcdn.com/images/1148093/FmH13P6Ab57H4yH8zOfCmESKa7nz.jpg?imageMogr2/strip/auto-orient/thumbnail/500x1000%3E/quality/90!/interlace/1/format/jpeg",
+        "mediaType": "image"
+       },
+       "weight": 0.0,
+       "sortNumber": 2,
+       "cost": 0
+      },
+      {
+       "id": 2196651,
+       "name": "二十课时",
+       "price": 400,
+       "quantity": -1,
+       "originalPrice": -1,
+       "picture": {
+        "url": "https://user-assets.sxlcdn.com/images/1148093/FmH13P6Ab57H4yH8zOfCmESKa7nz.jpg?imageMogr2/strip/auto-orient/thumbnail/2000x3000%3E/quality/90!/interlace/1/format/jpeg",
+        "thumbnailUrl": "https://user-assets.sxlcdn.com/images/1148093/FmH13P6Ab57H4yH8zOfCmESKa7nz.jpg?imageMogr2/strip/auto-orient/thumbnail/500x1000%3E/quality/90!/interlace/1/format/jpeg",
+        "mediaType": "image"
+       },
+       "weight": 0.0,
+       "sortNumber": 3,
+       "cost": 0
+      },
+      {
+       "id": 2196652,
+       "name": "二十四课时",
+       "price": 450,
+       "quantity": -1,
+       "originalPrice": -1,
+       "picture": {
+        "url": "https://user-assets.sxlcdn.com/images/1148093/FmH13P6Ab57H4yH8zOfCmESKa7nz.jpg?imageMogr2/strip/auto-orient/thumbnail/2000x3000%3E/quality/90!/interlace/1/format/jpeg",
+        "thumbnailUrl": "https://user-assets.sxlcdn.com/images/1148093/FmH13P6Ab57H4yH8zOfCmESKa7nz.jpg?imageMogr2/strip/auto-orient/thumbnail/500x1000%3E/quality/90!/interlace/1/format/jpeg",
+        "mediaType": "image"
+       },
+       "weight": 0.0,
+       "sortNumber": 4,
+       "cost": 0
+      }
+     ],
+     "reviewsScore": 0,
+     "reviewsCount": 0
+    },
+    {
+     "id": 2148664,
+     "name": "五不评价手册(火星教育出版社)(火教社)",
+     "description": "HB/T20230003.5",
+     "picture": [
+      {
+       "url": "https://user-assets.sxlcdn.com/images/1148093/Fme70NPjeE9DZEehQ001hQo_dESU.png?imageMogr2/strip/auto-orient/thumbnail/2000x3000%3E/quality/90!/format/png",
+       "thumbnailUrl": "https://user-assets.sxlcdn.com/images/1148093/Fme70NPjeE9DZEehQ001hQo_dESU.png?imageMogr2/strip/auto-orient/thumbnail/500x1000%3E/quality/90!/format/png",
+       "mediaType": "image"
+      }
+     ],
+     "detailEnabled": false,
+     "dimensions": null,
+     "status": "visible",
+     "productType": "physical",
+     "enableCustomSlug": false,
+     "customSlug": null,
+     "enabled": true,
+     "sortWeight": {
+      "all": 100,
+      "no": 100
+     },
+     "ctaBtn": null,
+     "shippingInfo": "",
+     "estimatedDelivery": "",
+     "timedShelfDate": null,
+     "posId": null,
+     "isWeightToAll": true,
+     "weightToAll": 0,
+     "startDate": null,
+     "endDate": null,
+     "categoryIds": [],
+     "categories": [],
+     "slugPath": "/store/products/da39a3ee5e6",
+     "realSales": 40000,
+     "originalSales": 0,
+     "variations": [
+      {
+       "id": 2196646,
+       "name": "整册",
+       "price": 500,
+       "quantity": -1,
+       "originalPrice": -1,
+       "picture": null,
+       "weight": 0.0,
+       "sortNumber": 0,
+       "cost": 0
+      },
+      {
+       "id": 2196647,
+       "name": "单页",
+       "price": 100,
+       "quantity": -1,
+       "originalPrice": -1,
+       "picture": null,
+       "weight": 0.0,
+       "sortNumber": 1,
+       "cost": 0
+      },
+      {
+       "id": 2217233,
+       "name": "整本胶带加固",
+       "price": 1000,
+       "quantity": -1,
+       "originalPrice": -1,
+       "picture": {
+        "url": "https://user-assets.sxlcdn.com/images/1148093/Fme70NPjeE9DZEehQ001hQo_dESU.png?imageMogr2/strip/auto-orient/thumbnail/2000x3000%3E/quality/90!/format/png",
+        "thumbnailUrl": "https://user-assets.sxlcdn.com/images/1148093/Fme70NPjeE9DZEehQ001hQo_dESU.png?imageMogr2/strip/auto-orient/thumbnail/500x1000%3E/quality/90!/format/png",
+        "mediaType": "image"
+       },
+       "weight": 0.0,
+       "sortNumber": 2,
+       "cost": 0
+      }
+     ],
+     "reviewsScore": 0,
+     "reviewsCount": 0
+    }
+   ]
+  }
+ },
+ "ecommerce": {
+  "status": 200,
+  "meta": {
+   "devMessage": null,
+   "errorKey": null,
+   "userMessage": {
+    "i18n": {
+     "key": null,
+     "interpolations": null
+    },
+    "plain": null
+   }
+  },
+  "data": {
+   "paymentGateways": {
+    "stripe": false,
+    "offline": true,
+    "paypal": false,
+    "alipay": false,
+    "pingppWxPub": null,
+    "pingppWxPubQr": null,
+    "pingppAlipayQr": null,
+    "pingppAlipayWap": null,
+    "wechatpay": false,
+    "square": false
+   },
+   "connectedToPaynow": false,
+   "shortcuts": [],
+   "shortcutsOrder": {},
+   "hasCoupon": false,
+   "customerSupportEmail": "no-reply@emails.sxl.cn",
+   "notificationEmail": "machenlong2023@outlook.com",
+   "shippingGuideline": null,
+   "currencyCode": "CNY",
+   "currencyData": {
+    "code": "CNY",
+    "symbol": "¥",
+    "decimal": ".",
+    "thousand": ",",
+    "precision": 2,
+    "name": "人民币"
+   },
+   "estimatedDelivery": null,
+   "orderBy": null,
+   "orderList": {},
+   "categoryOrder": {},
+   "shippingRegions": {
+    "default": {
+     "feePerAdditionalItem": 0,
+     "feePerOrder": 0,
+     "feeBaseCost": 0,
+     "feePerUnitCost": 0,
+     "feeThreshold0": 0,
+     "feeThreshold1": 0,
+     "feeThreshold2": 0,
+     "feeThreshold3": 0,
+     "feeThreshold4": 0,
+     "feeAboveThreshold": 0
+    }
+   },
+   "taxes": 0,
+   "registration": "no_registration",
+   "registrationMessage": null,
+   "banner": [],
+   "flashSalePosition": true,
+   "couponsDisplayPosition": "all_position",
+   "enableComments": false,
+   "showSales": null,
+   "showFilter": null,
+   "taxMode": "flat",
+   "taxCalculationMode": "taxes_added",
+   "stateTaxes": {
+    "nonUs": 0,
+    "al": 0,
+    "ak": 0,
+    "as": 0,
+    "az": 0,
+    "ar": 0,
+    "ca": 0,
+    "co": 0,
+    "ct": 0,
+    "de": 0,
+    "dc": 0,
+    "fl": 0,
+    "ga": 0,
+    "gu": 0,
+    "hi": 0,
+    "id": 0,
+    "il": 0,
+    "in": 0,
+    "ia": 0,
+    "ks": 0,
+    "ky": 0,
+    "la": 0,
+    "me": 0,
+    "md": 0,
+    "ma": 0,
+    "mi": 0,
+    "mn": 0,
+    "ms": 0,
+    "mo": 0,
+    "mt": 0,
+    "ne": 0,
+    "nv": 0,
+    "nh": 0,
+    "nj": 0,
+    "nm": 0,
+    "ny": 0,
+    "nc": 0,
+    "nd": 0,
+    "mp": 0,
+    "oh": 0,
+    "ok": 0,
+    "or": 0,
+    "pa": 0,
+    "pr": 0,
+    "ri": 0,
+    "sc": 0,
+    "sd": 0,
+    "tn": 0,
+    "tx": 0,
+    "ut": 0,
+    "vt": 0,
+    "vi": 0,
+    "va": 0,
+    "wa": 0,
+    "wv": 0,
+    "wi": 0,
+    "wy": 0
+   },
+   "euVatRates": {
+    "restOfWorld": 0,
+    "al": 0,
+    "at": 0,
+    "by": 0,
+    "be": 0,
+    "ba": 0,
+    "bg": 0,
+    "hr": 0,
+    "cz": 0,
+    "dk": 0,
+    "ee": 0,
+    "fi": 0,
+    "fr": 0,
+    "de": 0,
+    "gr": 0,
+    "hu": 0,
+    "ie": 0,
+    "it": 0,
+    "lv": 0,
+    "lt": 0,
+    "lu": 0,
+    "mt": 0,
+    "md": 0,
+    "nl": 0,
+    "mk": 0,
+    "false": 0,
+    "pl": 0,
+    "pt": 0,
+    "cy": 0,
+    "ro": 0,
+    "ru": 0,
+    "rs": 0,
+    "sk": 0,
+    "si": 0,
+    "es": 0,
+    "se": 0,
+    "ch": 0,
+    "tr": 0,
+    "ua": 0,
+    "gb": 0
+   },
+   "shippingMode": "flat_per_item",
+   "weightThresholds": [],
+   "enableMemberRanking": false,
+   "memberRankingRemark": null,
+   "freeShippingThreshold": null,
+   "buyButtonText": {},
+   "checkoutNoticeMessage": null,
+   "productFilters": null,
+   "checkoutContactInfo": null,
+   "postOrderRedirection": {},
+   "instructions": "仅评委可到货",
+   "method": "微信或现金",
+   "shippingOptions": [
+    {
+     "id": 556195,
+     "settingId": 954418,
+     "name": "标准快递",
+     "shippingMode": "flat_per_item",
+     "shippingRegions": {
+      "default": {
+       "feePerOrder": 0,
+       "feePerAdditionalItem": 0
+      }
+     },
+     "weightThresholds": [],
+     "weightUnit": "kg",
+     "freeShippingThreshold": null,
+     "shippingGuideline": null,
+     "createdAt": "2024-01-19T21:39:53.788-08:00",
+     "updatedAt": "2024-01-19T21:39:53.788-08:00",
+     "isDefaultName": true,
+     "defaultName": "standard_shipping",
+     "isDefault": true
+    }
+   ],
+   "checkoutForm": null,
+   "checkoutFormSettings": {
+    "updatedAt": null
+   },
+   "acceptCreditCardPayment": "stripe",
+   "categoryVideoCoverStatus": {}
+  }
+ }
+}

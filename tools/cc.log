@@ -1,0 +1,19 @@
+﻿{
+ "before": "https://wubu-pw.mysxl.cn/2",
+ "after": "https://wubu-pw.mysxl.cn/2",
+ "btnInfo": {
+  "text": "下单结算",
+  "tag": "DIV",
+  "cls": "s-common-button checkout-btn"
+ },
+ "dialogs": [
+  {
+   "cls": "s-kit-modal-wrap buyer-checkout-dialog-wrapper s-variation-default s-custom-colors s-kit-m",
+   "text": "结算附加信息给卖家留言联系方式收货信息省省标准快递¥0.00付款方式微信或现金仅评委可到货订单详情订单摘要五不评价手册(北京嘚瑟附属青虫文教出版社)(青教社)八课时¥2.50x 1小计¥2.50配送(标准快递)¥0.00总价CNY¥2.50购买订单详情订单摘要五不评价手册(北京嘚瑟附属青虫文教出版社)(青教社)八课时¥2.50x 1小计¥2.50配送(标准快递)¥0.00总价CNY¥2.50"
+  },
+  {
+   "cls": "s-kit-modal buyer-checkout-dialog bigger-modal css-gp2qxq",
+   "text": "结算附加信息给卖家留言联系方式收货信息省省标准快递¥0.00付款方式微信或现金仅评委可到货订单详情订单摘要五不评价手册(北京嘚瑟附属青虫文教出版社)(青教社)八课时¥2.50x 1小计¥2.50配送(标准快递)¥0.00总价CNY¥2.50购买订单详情订单摘要五不评价手册(北京嘚瑟附属青虫文教出版社)(青教社)八课时¥2.50x 1小计¥2.50配送(标准快递)¥0.00总价CNY¥2.50"
+  }
+ ]
+}

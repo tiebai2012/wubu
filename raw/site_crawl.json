@@ -1,0 +1,76 @@
+[
+ {
+  "path": "/",
+  "status": 200,
+  "title": "五不评价协会成员网 | 上线了sxl.cn",
+  "bytes": 99681,
+  "paywords": [],
+  "sample": "#nav-popover-panel.nav-dropdown-popover{z-index:999999;padding:0 0;width:-webkit-max-content;width:-moz-max-content;width:max-content;}#nav-popover-panel.nav-dr"
+ },
+ {
+  "path": "/2",
+  "status": 200,
+  "title": "选择项目 - 五不评价协会成员网 | 上线了sxl.cn",
+  "bytes": 177591,
+  "paywords": [
+   "微信",
+   "支付"
+  ],
+  "sample": "#nav-popover-panel.nav-dropdown-popover{z-index:999999;padding:0 0;width:-webkit-max-content;width:-moz-max-content;width:max-content;}#nav-popover-panel.nav-dr"
+ },
+ {
+  "path": "/3",
+  "status": 200,
+  "title": "下载标准 - 五不评价协会成员网 | 上线了sxl.cn",
+  "bytes": 102192,
+  "paywords": [],
+  "sample": "#nav-popover-panel.nav-dropdown-popover{z-index:999999;padding:0 0;width:-webkit-max-content;width:-moz-max-content;width:max-content;}#nav-popover-panel.nav-dr"
+ },
+ {
+  "path": "/4",
+  "status": 200,
+  "title": "历史评价成绩 - 五不评价协会成员网 | 上线了sxl.cn",
+  "bytes": 132913,
+  "paywords": [],
+  "sample": "#nav-popover-panel.nav-dropdown-popover{z-index:999999;padding:0 0;width:-webkit-max-content;width:-moz-max-content;width:max-content;}#nav-popover-panel.nav-dr"
+ },
+ {
+  "path": "/5",
+  "status": 200,
+  "title": "关于五不 - 五不评价协会成员网 | 上线了sxl.cn",
+  "bytes": 96734,
+  "paywords": [],
+  "sample": "#nav-popover-panel.nav-dropdown-popover{z-index:999999;padding:0 0;width:-webkit-max-content;width:-moz-max-content;width:max-content;}#nav-popover-panel.nav-dr"
+ },
+ {
+  "path": "/pages/cookie-policy",
+  "status": 200,
+  "title": "Cookie Policy - GDPR - 五不评价协会成员网",
+  "bytes": 61414,
+  "paywords": [
+   "付款"
+  ],
+  "sample": "window.jQuery || document.write('<script src=\"https://static-assets.sxlcdn.com/jquery-f4e2137d267f77818d966e03df031337a38003039d43f15029422ddd171e14c4.js\"><\\/sc"
+ },
+ {
+  "path": "/store/categories",
+  "status": "ERR",
+  "error": "HTTP Error 404: Not Found"
+ },
+ {
+  "path": "/store/products/da39a3ee5e6",
+  "status": 200,
+  "title": "五不评价手册(火星教育出版社)(火教社)",
+  "bytes": 198698,
+  "paywords": [],
+  "sample": "#nav-popover-panel.nav-dropdown-popover{z-index:999999;padding:0 0;width:-webkit-max-content;width:-moz-max-content;width:max-content;}#nav-popover-panel.nav-dr"
+ },
+ {
+  "path": "/store/products/da39a3ee5e6-afe3068c-2512-4a86-897b-f461e2cd96eb",
+  "status": 200,
+  "title": "五不评价手册(北京嘚瑟附属青虫文教出版社)(青教社)",
+  "bytes": 199289,
+  "paywords": [],
+  "sample": "#nav-popover-panel.nav-dropdown-popover{z-index:999999;padding:0 0;width:-webkit-max-content;width:-moz-max-content;width:max-content;}#nav-popover-panel.nav-dr"
+ }
+]
