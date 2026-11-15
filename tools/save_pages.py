@@ -28,34 +28,11 @@ CSS_PROTO_REL = re.compile(r"""url\(\s*(['"]?)//([^'")]+)\1\s*\)""")
 # 字体样式表写成 media="print" + onload 切换，没有脚本就永远不生效，这里直接改成 all
 PRINT_LINK = re.compile(r"""(<link[^>]*?)\smedia=["']print["']([^>]*?)\sonload=["'][^"']*["']""", re.I)
 
-TO_TOP = ("<script>(function(){"
-          "var orig=document.querySelector('.s-navbar-desktop-normal');"
-          "var stuck=null;"
-          "var h=0;"
-          "function onScroll(){"
-          "var on=window.scrollY>60;"
-          "if(on&&!stuck&&orig){"
-          "stuck=orig.cloneNode(true);"
-          "stuck.className='s-navbar-desktop s-navbar-desktop-normal static-stuck';"
-          "h=Math.round(orig.getBoundingClientRect().height)||100;"
-          "stuck.style.height=h+'px';"
-          "(orig.parentNode||document.body).appendChild(stuck);"
-          "}else if(!on&&stuck){stuck.remove();stuck=null;}"
-          "}"
-          "window.addEventListener('scroll',onScroll,{passive:true});"
-          "setInterval(onScroll,150);onScroll();"
-          "document.addEventListener('click',function(e){"
-          "var t=e.target.closest('[href=\"#1\"]');"
-          "if(t){e.preventDefault();window.scrollTo({top:0,behavior:'smooth'});}});"
-          "})();</script>")
-
 APP_CSS = ('<link rel="stylesheet" href="https://static-assets.sxlcdn.com/'
            'application-2b688856817c0158ea671b54215a5d56a2f08ef76926fb7fb2e76f83ae02a5f6.css">')
 
 # 购物车脚本要在每一页都加载：导航栏的角标数字靠它更新
-SHOP_ASSETS = ('<link rel="stylesheet" href="assets/shop/cart-panel.css">\n'
-               '<link rel="stylesheet" href="assets/shop/shop.css">\n'
-               '<script src="assets/shop/shop.js" defer></script>\n')
+SHOP_ASSETS = ""
 
 # 原站的顶栏购物车是脚本渲染的，静态页里没有；这里按线上渲染结果原样补一份，
 # 放在「回到顶部」按钮前面（每个导航条各一份，和线上一致）。
@@ -72,31 +49,6 @@ BACK_TO_TOP_OPEN = '<div class="s-nav-link-container s-nav-btn"'
 
 # 原站顶栏默认是「透明 + 绝对定位」，白底与投影由脚本在滚动时切到另一个克隆条。
 # 存档没有脚本，这里把白底固定下来，并给吸顶克隆条补上原站那套投影。
-NAV_FIX = """
-<style id="static-navbar-fix">
-  /* 原站顶栏是透明 + 绝对定位，白底与投影由脚本切换：
-     滚动后由另一个克隆条吸顶并带 1px 投影。这里用同样的做法。 */
-  .s-navbar-desktop,
-  .s-navbar-mobile-header,
-  .s-navbar-mobile-wrapper,
-  .topBar {
-    background-color: #fff !important;
-    background-image: none !important;
-    box-shadow: none !important;
-  }
-  /* 滚动时克隆出来的吸顶条 */
-  .s-navbar-desktop.static-stuck {
-    position: fixed !important;
-    top: 0 !important;
-    left: 0;
-    right: 0;
-    z-index: 210 !important;
-    background-color: #fff !important;
-    box-shadow: 0 1px rgba(0, 0, 0, 0.12) !important;
-  }
-</style>
-"""
-
 LOCAL_PAGES = ("index.html", "projects.html", "standards.html", "results.html", "about.html")
 ANCHOR_RE = re.compile(r"<a\b[^>]*>", re.I)
 
@@ -155,8 +107,13 @@ for out_name, raw_name in PAGES:
     html = strip_internal_targets(html)
     html = PRINT_LINK.sub(r'\1 media="all"\2', html)
     html = html.replace(BACK_TO_TOP_OPEN, CART_NAV + BACK_TO_TOP_OPEN)
-    html = html.replace("</head>", APP_CSS + "\n" + NAV_FIX + "\n" + SHOP_ASSETS + "</head>")
-    html = html.replace("</body>", TO_TOP + "\n</body>")
+    html = html.replace("</head>", APP_CSS + "\n</head>")
+    # 导航高亮统一：各页都按首页那版显示（selected 固定落在“首页”），
+    # 这样五个页面顶栏完全一致
+    html = html.replace('<li class="s-nav-li selected">', '<li class="s-nav-li">')
+    html = re.sub(r'(<li class="s-nav-li">)(\s*<div class="s-nav-link-container">\s*<a[^>]*href="index.html")',
+                  r'<li class="s-nav-li selected">\2', html)
+
 
     with open(out_name, "wb") as f:
         f.write(html.encode("utf-8"))
