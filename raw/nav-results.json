@@ -1,0 +1,16 @@
+{
+ "cls": "s-navbar-desktop s-navbar-desktop-normal s-bg-dark-text s-new-layout topBar s-new-layout-a s-layout-version-a-v2 s-nav-spacing-compact s-nav-highlight-underline s-nav-drop-shadow-no s-nav-sticky-drop-shadow-default css-1eummce overlaps-content has-new-layout has-image2 has-button has-title s-nav-transparent-desktop remaining-text-color-logic",
+ "pseudo": [
+  {
+   "cls": "fa drop-down-icon-bold fas fa-chevron-down",
+   "k": "::before",
+   "content": "\"\"",
+   "bg": "rgba(0, 0, 0, 0)",
+   "w": "auto",
+   "h": "auto",
+   "bottom": "auto",
+   "position": "static",
+   "display": "inline"
+  }
+ ]
+}
