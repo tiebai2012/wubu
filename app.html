@@ -931,9 +931,11 @@ if (typeof getCookieItem === 'function' && !isDedicatedLandingPage && (getCookie
       var a = document.createElement('a');
       a.className = 'wubu-logo-link';
       a.href = url;
+      a.title = '前往 www.huojiao.fun';
+      // 本站部署在 https://wubu.huojiao.fun，跳主站用新标签页打开，
+      // 这样能保留当前页面（file:// 下会被浏览器拦，但那是本地预览的情况）
       a.target = '_blank';
       a.rel = 'noopener';
-      a.title = '前往 www.huojiao.fun';
       img.parentNode.insertBefore(a, img);
       a.appendChild(img);
     });
