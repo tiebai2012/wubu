@@ -1,0 +1,52 @@
+[
+ {
+  "clicked": "#p-index",
+  "text": "首页",
+  "active": [
+   "?"
+  ],
+  "url": "#p-index",
+  "scrollY": 0,
+  "visibleSlides": 11
+ },
+ {
+  "clicked": "#p-2",
+  "text": "选择项目",
+  "active": [
+   "?"
+  ],
+  "url": "#p-2",
+  "scrollY": 0,
+  "visibleSlides": 11
+ },
+ {
+  "clicked": "#p-3",
+  "text": "下载标准",
+  "active": [
+   "?"
+  ],
+  "url": "#p-3",
+  "scrollY": 0,
+  "visibleSlides": 11
+ },
+ {
+  "clicked": "#p-4",
+  "text": "历史评价成绩",
+  "active": [
+   "?"
+  ],
+  "url": "#p-4",
+  "scrollY": 0,
+  "visibleSlides": 11
+ },
+ {
+  "clicked": "#p-5",
+  "text": "关于五不",
+  "active": [
+   "?"
+  ],
+  "url": "#p-5",
+  "scrollY": 0,
+  "visibleSlides": 11
+ }
+]

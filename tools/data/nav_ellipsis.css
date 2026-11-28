@@ -1,0 +1,61 @@
+/* 桌面端导航折叠：窗口变窄时把靠后的菜单项收进「…」，点开是下拉。
+
+   原站实测（390px 手机另走抽屉）：
+     宽 ≥1150       全部 5 项都显示
+     宽 1100 / 1050 前 4 项，第 5 项进「…」
+     宽 1000        前 3 项，后 2 项进「…」
+   折叠点位于菜单右侧，尺寸 44×36。
+*/
+
+/* 只在桌面端启用（手机端用抽屉菜单） */
+@media (max-width: 767px) {
+  .wubu-navellipsis { display: none !important; }
+}
+
+.wubu-navellipsis {
+  position: relative;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 36px;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: 2px;
+  user-select: none;
+}
+.wubu-navellipsis.is-visible { display: inline-flex; }
+.wubu-navellipsis:hover { color: #000; }
+
+.wubu-navellipsis .wubu-navellipsis__panel {
+  position: absolute !important;
+  top: 100% !important;
+  right: 0 !important;
+  min-width: 148px;
+  background: #fff !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  padding: 6px 0;
+  display: none !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  z-index: 99999 !important;
+}
+.wubu-navellipsis.is-open .wubu-navellipsis__panel {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+.wubu-navellipsis__panel a {
+  display: block;
+  padding: 11px 18px;
+  font-size: 15px;
+  line-height: 1.4;
+  color: rgba(0, 0, 0, 0.8);
+  white-space: nowrap;
+  text-decoration: none;
+}
+.wubu-navellipsis__panel a:hover { background: #f5f5f5; color: #000; }
+.wubu-navellipsis__panel a.is-active { font-weight: 700; color: #000; }

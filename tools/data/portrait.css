@@ -1,15 +1,11 @@
-/* 竖屏（窄屏）适配：原站在手机上图片网格溢出、首页标题被裁切 */
+/* 手机端补丁：只修原站确实出错的地方，其余一律保持原站样式。
+   实测原站 390px 宽下：
+     - 标题 36px，能完整显示（不是裁切）
+     - 「进入」按钮 padding:14px 28px、宽度 100%、字号 20px/700
+     - 成绩页图片格子写死 419px，比容器宽 → 整页可横向拖动（真 bug，要修）
+*/
 @media (max-width: 767px) {
-  html, body { overflow-x: hidden !important; max-width: 100% !important; }
-
-  /* 成绩页图片网格：原站给每个格子写死了 419px 的宽度，
-     比父容器（359px）还宽，导致整页可以横向拖动。改成跟随父容器。 */
-  .s-new-gallery-content,
-  .s-new-gallery,
-  .s-new-gallery-list {
-    width: 100% !important;
-    max-width: 100% !important;
-  }
+  /* 成绩页图片网格：原站给每格写死 419px 宽，超出现口，改成跟随容器 */
   .s-new-gallery-item,
   .s-new-gallery-grid-item,
   .s-new-gallery-grid-item.two,
@@ -21,39 +17,12 @@
     margin-right: 0 !important;
     box-sizing: border-box !important;
   }
-  /* 图片本身也不许超宽 */
   .s-new-gallery-item img,
   .s-new-gallery-grid-item img {
     width: 100% !important;
     height: auto !important;
   }
 
-  /* 标题：原站窄屏用固定 36/40px，长标题排不下会被裁。
-     按视口宽度缩放，保证一行放得下。 */
-  .s-slide h1,
-  .s-slide h2,
-  .s-component-content.s-font-title h1,
-  .s-component-content.s-font-title h2,
-  .s-rich-text-wrapper h1,
-  .s-rich-text-wrapper h2,
-  .font-size-tag-header-one {
-    font-size: clamp(1.35rem, 7.2vw, 2rem) !important;
-    line-height: 1.32 !important;
-    word-break: break-word;
-    overflow-wrap: anywhere;
-  }
-
-  /* 按钮、图片不撑破容器 */
-  .s-common-button, .s-custom-btn { max-width: 100% !important; }
-  img, .s-img-wrapper { max-width: 100% !important; }
-}
-
-/* 「进入」按钮：原站 9 列宽度在窄屏会撑出容器 */
-@media (max-width: 767px) {
-  .s-button-package, .s-button-package .s-button,
-  .s-component-content > .s-common-button {
-    max-width: 100% !important;
-    width: auto !important;
-  }
-  .s-button-package { padding-left: 10px !important; padding-right: 10px !important; }
+  /* 只禁止横向拖动，不改变任何元素的视觉尺寸 */
+  html { overflow-x: hidden; }
 }

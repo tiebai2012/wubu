@@ -76,8 +76,11 @@ def menu_html(active):
 
 
 def main():
-    with open(os.path.join(DATA, "mobile-menu.css"), encoding="utf-8") as f:
-        css = f.read()
+    import importlib.util
+    spec = importlib.util.spec_from_file_location("mnd", os.path.join(DATA, "mobile_nav_data.py"))
+    mnd = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mnd)
+    css = mnd.MOBILE_CSS
 
     for path in sorted(glob.glob(os.path.join(ROOT, "*.html"))):
         name = os.path.basename(path)
@@ -86,6 +89,14 @@ def main():
             continue
         with open(path, "rb") as f:
             html = f.read().decode("utf-8")
+
+
+        # --- 0. 激活懒加载元素 ---
+        # 原站靠 lazysizes 脚本在元素可见时补上 lazyloaded 类，本地没有脚本，
+        # 导致 .lazyload 的样式（区块内边距等）不生效，页面纵向出现偏差。
+        # 这里直接把 lazyloaded 加上。
+        html = re.sub(r'class="lazyload(\s)', r'class="lazyloaded\1', html)
+        html = html.replace('class="lazyload"', 'class="lazyloaded"')
 
         # --- 1. 删页脚 ---
         removed = 0
