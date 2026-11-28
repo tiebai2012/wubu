@@ -31,14 +31,15 @@ def wrap_logo(html):
     # s-logo 到下一个同级大区块之间，简单做法：按 img 所在位置回溯
     out = []
     pos = 0
-    for m in re.finditer(r'<div class="s-logo">', html):
+    # 手机端顶栏、桌面端顶栏都要处理
+    for m in re.finditer(r'<div class="(?:s-logo|s-navbar-mobile-header[^"]*)">', html):
         start = m.start()
         # 找这段 s-logo 内的所有 img（到 section 结束）
         end = html.find('</header>', start)
         if end < 0:
             end = html.find('s-nav-items-and-links', start)
         if end < 0:
-            continue
+            end = min(len(html), start + 4000)
         out.append(html[pos:start])
         out.append(do_block(re.match(r'.*', html[start:end], re.S)))
         pos = end
