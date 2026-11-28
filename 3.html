@@ -843,6 +843,34 @@ if (typeof getCookieItem === 'function' && !isDedicatedLandingPage && (getCookie
   }
 })();
 </script>
+<script>
+(function () {
+  var url = 'https://www.huojiao.fun';
+  function boot() {
+    // logo 在正常条与吸顶条里各有一份，全部加上链接
+    document.querySelectorAll('.s-logo img').forEach(function (img) {
+      if (img.closest('a.wubu-logo-link')) return;
+      var a = document.createElement('a');
+      a.className = 'wubu-logo-link';
+      a.href = url;
+      a.target = '_blank';
+      a.rel = 'noopener';
+      a.title = '前往 www.huojiao.fun';
+      img.parentNode.insertBefore(a, img);
+      a.appendChild(img);
+    });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', boot);
+  } else {
+    boot();
+  }
+})();
+</script>
+<style id="wubu-logo-css">
+  a.wubu-logo-link { display: inline-block; cursor: pointer; }
+  a.wubu-logo-link img { display: block; }
+</style>
 </body>
 </html>
 <!-- Powered by Sxl.cn 4 (1) Nov 14, 2026 at 19:51-->

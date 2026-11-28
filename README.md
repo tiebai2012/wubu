@@ -28,7 +28,8 @@
 5. **手机端三条杠菜单**——原站移动端左上角的按钮靠平台脚本，现补了等价实现（抽屉式导航）。
 6. **桌面端「…」折叠**——复用原站自带的 `.s-nav-ellipsis` 元素；实测阈值 ≥1150 全显示、1050–1149 显示前 4 项、<1050 显示前 3 项。
 7. **删掉页脚**——「关于我们 / 资源 / 联系我们」整块移除。
-8. **手机端只修真实 bug**——成绩页图片格子写死 419px 宽导致整页可横向拖动，仅此一处；其余样式保持原站数值（标题 36px、按钮满宽等）。
+8. **logo 可点击**——左上角 logo 点击跳转 `https://www.huojiao.fun`（新标签页打开）。原站 logo 只是张图，没有链接。
+9. **手机端只修真实 bug**——成绩页图片格子写死 419px 宽导致整页可横向拖动，仅此一处；其余样式保持原站数值（标题 36px、按钮满宽等）。
 
 ## 单文件版是怎么实现的
 
@@ -48,6 +49,7 @@ tools/make_offline.py                        下载资源、接站内链接
 tools/mobile_nav.py                          手机端导航 + 删页脚
 tools/nav_ellipsis.py                        桌面端「…」折叠
 tools/merge_pages.py                         合并成单文件 app.html
+tools/logo_link.py                           给左上角 logo 加外链
 ```
 
 重新生成：
@@ -58,4 +60,5 @@ python tools/make_offline.py
 python tools/mobile_nav.py
 python tools/nav_ellipsis.py
 python tools/merge_pages.py
+python tools/logo_link.py
 ```
