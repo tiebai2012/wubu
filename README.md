@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 五不评价协会 · 成员网（离线静态版）
 
 从 `wubu-pw.mysxl.cn` 抓下来的五个页面，**双击就能看，不联网也行**。
@@ -59,3 +60,6 @@ tools/data/portrait.css                      手机端样式补丁
 tools/data/mobile-menu.css                   手机端菜单样式
 tools/probe_portrait.js                      竖屏溢出检测（CDP）
 ```
+=======
+五不评价协会官网纪念版
+>>>>>>> a853f6ee2995f3a9ec0b26537d4ba39e47801ed4
